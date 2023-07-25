@@ -19,7 +19,7 @@ app.use(
 const uri = "mongodb+srv://IlhamZul:13ilhamjul@cluster0.lptggxk.mongodb.net/?retryWrites=true&w=majority";
 
 app.use("/menu", menuroute);
-app.use("/api", userroute);
+app.use("/", userroute);
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
